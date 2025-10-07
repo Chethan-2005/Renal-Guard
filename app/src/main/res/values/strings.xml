@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">RenalGuard</string>
+
+    <!-- Score screen -->
+    <string name="score">Sepsis Risk Score (Infection Likelihood)</string>
+    <string name="patient_score">Patient Score</string>
+    <string name="total_score">Total Score</string>
+    <string name="scale_label">Scale</string>
+    <string name="recommendations">Infection Prevention Strategies</string>
+    <string name="done">Done</string>
+
+    <!-- Hardcoded numbers (used for warnings cleanup) -->
+    <string name="five">5</string>
+    <string name="seven">7</string>
+    <string name="ten">10</string>
+    <string name="fifteen">15</string>
+    <string name="eighteen">18</string>
+    <string name="nineteen">19</string>
+    <string name="twenty_five">25</string>
+    <string name="arrow">arrow</string>
+
+    <string name="about_us_text">
+        Renal Guard App: IJV Line Risk and Health for Dialysis\n\n
+        Overview:\n
+        The Renal Guard App is a clinical decision-support tool specifically designed to help healthcare professionals evaluate and manage the risks associated with internal jugular vein (IJV) catheter use in patients undergoing hemodialysis.\n
+        IJV lines, while essential for short- or medium-term vascular access, carry inherent risks such as infection, thrombosis, and catheter dysfunction.\n
+        This app integrates patient-specific parameters into a comprehensive scoring system (maximum 25 points) to guide evidence-based interventions.\n\n
+        Key Features and Functions:\n
+        1. Risk Scoring for IJV Catheters\n
+        • Calculates a total risk score based on multiple clinical factors including duration of catheter placement, patient comorbidities, history of infections, catheter care practices, and lab parameters.\n
+        • Risk levels are categorized as low, moderate, or high.\n\n
+        2. Sepsis Risk Assessment\n
+        • Uses clinical and laboratory markers to classify sepsis risk into mild, moderate, or severe.\n
+        • Offers prompts for immediate clinical actions in high-risk cases.\n\n
+        3. Line Management and Infection Prevention\n
+        • Provides recommendations on when to replace the IJV catheter.\n
+        • Suggests best practices for infection control.\n\n
+        4. Antibiotic Decision Support\n
+        • Recommends whether empirical or targeted antibiotics should be initiated.\n
+        • Integrates local antibiogram data to optimize antibiotic selection.\n\n
+        5. Vascular Access Planning\n
+        • Advises on transition to an arteriovenous fistula (AVF) in CKD patients.\n\n
+        6. Dietary Guidance\n
+        • Offers tailored dietary recommendations.\n\n
+        Benefits:\n
+        • Streamlined Clinical Workflow\n
+        • Improved Patient Safety\n
+        • Optimized Long-Term Care
+    </string>
+</resources>

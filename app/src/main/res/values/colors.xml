@@ -1,0 +1,22 @@
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="teal_700">#018786</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="background">#F9F9F9</color> <!-- Add this line -->
+    <color name="primary">#00A7B3</color>
+    <color name="primaryColor">#0097A7</color>
+    <color name="primaryLight">#56C8D8</color>
+    <color name="primaryDark">#006978</color>
+    <color name="accentColor">#FFC107</color>
+    <color name="textPrimary">#000000</color>
+    <color name="textSecondary">#757575</color>
+    <color name="background_light">#F9F9F9</color>
+    <color name="backgroundLight">#FFFFFF</color>
+
+    <!-- Theme-aware colors -->
+    <color name="light_surface">#FFFFFF</color>
+    <color name="light_on_surface">#000000</color>
+    <color name="dark_surface">#121212</color>
+    <color name="dark_on_surface">#FFFFFF</color>
+</resources>

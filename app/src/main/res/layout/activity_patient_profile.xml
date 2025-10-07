@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
+    tools:context=".PatientProfileActivity">
+
+    <!-- Header -->
+<RelativeLayout
+android:id="@+id/headerLayout"
+android:layout_width="match_parent"
+android:layout_height="60dp"
+android:background="?attr/colorPrimary">
+
+<ImageButton
+    android:id="@+id/btnInfo"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_centerVertical="true"
+    android:layout_marginStart="10dp"
+    android:background="@android:color/transparent"
+    android:src="@drawable/ic_info"
+    app:tint="?attr/colorOnPrimary"
+    android:contentDescription="Info" />
+
+<TextView
+    android:id="@+id/tvProfileTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:text="Profile"
+    android:textColor="?attr/colorOnPrimary"
+    android:textSize="20sp"
+    android:textStyle="bold" />
+
+<!-- Theme Toggle Button -->
+<ImageButton
+    android:id="@+id/themeToggle"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_centerVertical="true"
+    android:layout_toStartOf="@id/btnLogout"
+    android:layout_marginEnd="8dp"
+    android:background="@android:color/transparent"
+    android:src="@drawable/ic_dark_mode"
+    app:tint="?attr/colorOnPrimary"
+    android:contentDescription="Theme Toggle" />
+
+<ImageButton
+    android:id="@+id/btnLogout"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_alignParentEnd="true"
+    android:layout_centerVertical="true"
+    android:layout_marginEnd="10dp"
+    android:background="@android:color/transparent"
+    android:src="@drawable/ic_logout"
+    app:tint="?attr/colorOnPrimary"
+    android:contentDescription="Logout" />
+</RelativeLayout>
+
+    <!-- Scrollable content -->
+<ScrollView
+android:id="@+id/scrollProfile"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_above="@id/btnSaveExit"
+android:layout_below="@id/headerLayout"
+android:padding="16dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <!-- Profile Picture -->
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_profile"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        app:tint="?attr/colorPrimary" /> <!-- Added tint for consistency -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile Picture"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="14sp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Name -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edittext_theme_aware"
+        android:hint="Name"
+        android:padding="12dp"
+        android:textColor="?attr/colorOnSurface"
+        android:textColorHint="?attr/colorOnSurface" />
+
+    <!-- Mobile Number -->
+    <EditText
+        android:id="@+id/etMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_edittext_theme_aware"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:textColor="?attr/colorOnSurface"
+        android:textColorHint="?attr/colorOnSurface" />
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_edittext_theme_aware"
+        android:hint="E-Mail Address"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textColor="?attr/colorOnSurface"
+        android:textColorHint="?attr/colorOnSurface" />
+
+    <!-- Change Password -->
+    <EditText
+        android:id="@+id/etChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_edittext_theme_aware"
+        android:hint="Change Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="?attr/colorOnSurface"
+        android:textColorHint="?attr/colorOnSurface" />
+
+    <!-- Re-Enter Password -->
+    <EditText
+        android:id="@+id/etReEnterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_edittext_theme_aware"
+        android:hint="Re-Enter Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="?attr/colorOnSurface"
+        android:textColorHint="?attr/colorOnSurface" />
+
+</LinearLayout>
+</ScrollView>
+
+    <!-- Save & Exit button (Fixed at bottom) -->
+<Button
+android:id="@+id/btnSaveExit"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:layout_margin="16dp"
+android:backgroundTint="?attr/colorPrimary"
+    android:text="Save &amp; Exit"
+    android:textColor="?attr/colorOnPrimary"
+    android:textSize="16sp" />
+
+    </RelativeLayout>

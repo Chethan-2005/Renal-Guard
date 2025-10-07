@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="?attr/colorSurface"
+    tools:context=".Welcome">
+
+    <!-- App Logo -->
+<ImageView
+android:id="@+id/imgLogo"
+android:layout_width="279dp"
+android:layout_height="472dp"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="100dp"
+android:contentDescription="Renal Guard Logo"
+android:src="@drawable/logo_renal_guard" /> <!-- Ensured consistent logo -->
+
+    <!-- Get Started Button -->
+<Button
+android:id="@+id/btnGetStarted"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Get Started"
+android:textColor="?attr/colorOnPrimary"
+    android:backgroundTint="?attr/colorPrimary"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="50dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp" />
+
+    </RelativeLayout>

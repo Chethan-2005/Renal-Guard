@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_otp_verification"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="?attr/colorSurface"> <!-- Changed to theme-aware background -->
+
+    <!-- Top Bar - MaterialToolbar for consistency -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="OTP Verification"
+        app:titleTextColor="?attr/colorOnPrimary"
+        app:navigationIcon="@drawable/ic_back"
+        app:navigationContentDescription="Back" />
+
+    <!-- Instruction -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the 4-digit code sent to your email"
+        android:textColor="?attr/colorOnSurface"
+    android:textSize="14sp"
+    android:gravity="center"
+    android:layout_marginTop="30dp" />
+
+    <!-- OTP Boxes -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/otp1"
+            style="@style/OtpBox" />
+
+        <EditText
+            android:id="@+id/otp2"
+            style="@style/OtpBox"
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:id="@+id/otp3"
+            style="@style/OtpBox"
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:id="@+id/otp4"
+            style="@style/OtpBox"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+    <!-- Resend OTP -->
+    <TextView
+        android:id="@+id/textResendOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resend OTP"
+        android:textColor="?attr/colorPrimary"
+    android:textStyle="bold"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="15dp" />
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/btnChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Change Password"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:backgroundTint="?attr/colorPrimary"
+    android:textColor="?attr/colorOnPrimary"
+    android:layout_marginTop="40dp"
+    android:layout_marginHorizontal="20dp" />
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Done"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:backgroundTint="?attr/colorSecondary"
+    android:textColor="?attr/colorOnSecondary"
+    android:layout_marginTop="12dp"
+    android:layout_marginHorizontal="20dp" />
+
+</LinearLayout>
