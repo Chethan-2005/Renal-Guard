@@ -69,15 +69,6 @@
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="4dp" />
 
-            <!-- ✅ Edit icon restored -->
-            <ImageView
-                android:id="@+id/edit_icon"
-                android:layout_width="28dp"
-                android:layout_height="28dp"
-                android:src="@drawable/ic_edit"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                app:tint="?attr/colorPrimary" />
 
         </RelativeLayout>
     </com.google.android.material.card.MaterialCardView>

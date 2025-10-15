@@ -79,7 +79,8 @@
                         android:layout_height="wrap_content"
                         android:hint="Age"
                         android:textColorHint="?attr/colorOnSurface"
-                        app:boxStrokeColor="?attr/colorPrimary">
+                        app:boxStrokeColor="?attr/colorPrimary"
+                        android:layout_marginTop="8dp">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/etAge"
@@ -89,20 +90,26 @@
                             android:textColor="?attr/colorOnSurface" />
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <!-- Gender -->
+                    <!-- Gender Dropdown -->
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilGender"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Gender"
-                        android:textColorHint="?attr/colorOnSurface"
-                        app:boxStrokeColor="?attr/colorPrimary">
+                        app:endIconMode="dropdown_menu"
+                        app:boxStrokeColor="?attr/colorPrimary"
+                        android:layout_marginTop="1dp">
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etGender"
+                        <AutoCompleteTextView
+                            android:id="@+id/actvGender"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textColor="?attr/colorOnSurface" />
+                            android:layout_height="50dp"
+                            android:inputType="none"
+                            android:focusable="false"
+                            android:clickable="true"
+                            android:textColor="?attr/colorOnSurface"
+                            android:textColorHint="?attr/colorOnSurface"
+                            android:hint="   Select Gender" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <!-- Email -->
@@ -112,7 +119,8 @@
                         android:layout_height="wrap_content"
                         android:hint="Email"
                         android:textColorHint="?attr/colorOnSurface"
-                        app:boxStrokeColor="?attr/colorPrimary">
+                        app:boxStrokeColor="?attr/colorPrimary"
+                        android:layout_marginTop="8dp">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/etEmail"
@@ -129,7 +137,8 @@
                         android:layout_height="wrap_content"
                         android:hint="Mobile Number"
                         android:textColorHint="?attr/colorOnSurface"
-                        app:boxStrokeColor="?attr/colorPrimary">
+                        app:boxStrokeColor="?attr/colorPrimary"
+                        android:layout_marginTop="8dp">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/etMobile"

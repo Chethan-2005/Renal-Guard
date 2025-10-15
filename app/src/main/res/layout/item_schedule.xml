@@ -31,6 +31,15 @@
         android:textSize="14sp"
         android:textColor="@android:color/holo_green_dark" />
 
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="14sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginTop="4dp"/>
+
     <!-- Nested RecyclerView for patients -->
     <LinearLayout
         android:id="@+id/patientContainer"

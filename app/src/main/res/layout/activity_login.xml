@@ -143,15 +143,5 @@ android:gravity="center_horizontal">
     android:layout_marginTop="20dp"
     android:backgroundTint="?attr/colorPrimary" />
 
-<!-- Forgot Password -->
-<Button
-    android:id="@+id/btnForgotPassword"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Forgot Password?"
-    android:background="@android:color/transparent"
-    android:textColor="?attr/colorPrimary"
-    android:layout_gravity="center"
-    android:layout_marginTop="16dp"/>
 </LinearLayout>
     </ScrollView>

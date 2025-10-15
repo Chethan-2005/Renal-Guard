@@ -3,21 +3,37 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="6dp">
+    android:padding="6dp"
+    android:gravity="center_vertical"
+    android:background="?android:attr/selectableItemBackground">
 
     <TextView
         android:id="@+id/tvPatientName"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:text="Patient Name"
+        android:textStyle="bold"
         android:textSize="14sp"
-        android:textStyle="bold" />
+        android:textColor="@android:color/black" />
 
     <TextView
         android:id="@+id/tvSlotTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="10:00 AM"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attended"
+        android:textSize="14sp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="@android:color/black" />
+
 </LinearLayout>

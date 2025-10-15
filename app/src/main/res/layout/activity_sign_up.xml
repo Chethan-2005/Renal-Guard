@@ -6,115 +6,126 @@
     android:background="?attr/colorSurface"
     android:padding="0dp">
 
-<LinearLayout
-android:orientation="vertical"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:gravity="center_horizontal">
-
-<!-- Top App Bar -->
-<com.google.android.material.appbar.MaterialToolbar
-    android:id="@+id/topAppBar"
-    android:layout_width="match_parent"
-    android:layout_height="?attr/actionBarSize"
-    android:background="?attr/colorPrimary"
-    app:title="Create Account"
-    app:titleTextColor="?attr/colorOnPrimary"
-    app:navigationIcon="@drawable/ic_back"
-    app:navigationContentDescription="Back" />
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="20dp"
-    android:gravity="center_horizontal">
-
-    <!-- Subtitle -->
-    <TextView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Join Renal Guard and manage your dialysis care easily"
-        android:textSize="14sp"
-        android:gravity="center"
-        android:layout_marginBottom="24dp"
-        android:textColor="?attr/colorOnSurface" />
+        android:gravity="center_horizontal">
 
-    <!-- Name -->
-    <EditText
-        android:id="@+id/editName"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="Full Name"
-        android:background="@drawable/edittext_bg"
-        android:padding="12dp"
-        android:textColor="?attr/colorOnSurface"
-        android:textColorHint="?attr/colorOnSurface"
-        android:layout_marginBottom="16dp" />
+        <!-- Top App Bar -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:title="Create Account"
+            app:titleTextColor="?attr/colorOnPrimary"
+            app:navigationIcon="@drawable/ic_back"
+            app:navigationContentDescription="Back" />
 
-    <!-- Email -->
-    <EditText
-        android:id="@+id/editEmail"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="Email Address"
-        android:inputType="textEmailAddress"
-        android:background="@drawable/edittext_bg"
-        android:padding="12dp"
-        android:textColor="?attr/colorOnSurface"
-        android:textColorHint="?attr/colorOnSurface"
-        android:layout_marginBottom="16dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center_horizontal">
 
-    <!-- Phone -->
-    <EditText
-        android:id="@+id/editPhone"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="Phone Number"
-        android:inputType="phone"
-        android:background="@drawable/edittext_bg"
-        android:padding="12dp"
-        android:textColor="?attr/colorOnSurface"
-        android:textColorHint="?attr/colorOnSurface"
-        android:layout_marginBottom="16dp" />
+            <!-- Subtitle -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Join Renal Guard and manage your dialysis care easily"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"
+                android:textColor="?attr/colorOnSurface" />
 
-    <!-- Password -->
-    <EditText
-        android:id="@+id/editPassword"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:background="@drawable/edittext_bg"
-        android:padding="12dp"
-        android:textColor="?attr/colorOnSurface"
-        android:textColorHint="?attr/colorOnSurface"
-        android:layout_marginBottom="16dp" />
+            <!-- Name -->
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Full Name"
+                android:background="@drawable/edittext_bg"
+                android:padding="12dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="?attr/colorOnSurface"
+                android:layout_marginBottom="16dp" />
 
-    <!-- Role Selection -->
-    <Spinner
-        android:id="@+id/spinnerRole"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/spinner_bg_theme_aware"
-        android:layout_marginBottom="24dp"
-        android:padding="12dp"
-        android:popupBackground="?attr/colorSurface"
-        android:spinnerMode="dropdown"
-        android:theme="@style/ThemeOverlay.AppCompat.Light" />
+            <!-- Email -->
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edittext_bg"
+                android:padding="12dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="?attr/colorOnSurface"
+                android:layout_marginBottom="16dp" />
 
-    <!-- Sign Up Button -->
-    <Button
-        android:id="@+id/btnSignUp"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="Sign Up"
-        android:textStyle="bold"
-        android:textSize="16sp"
-        android:backgroundTint="?attr/colorPrimary"
-        android:textColor="?attr/colorOnPrimary"
-        android:layout_marginBottom="12dp" />
+            <!-- Phone -->
+            <EditText
+                android:id="@+id/editPhone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:background="@drawable/edittext_bg"
+                android:padding="12dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="?attr/colorOnSurface"
+                android:layout_marginBottom="16dp" />
 
-</LinearLayout>
-</LinearLayout>
-    </ScrollView>
+            <!-- Password -->
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:background="@drawable/edittext_bg"
+                android:padding="12dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="?attr/colorOnSurface"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Password Instruction Text -->
+            <TextView
+                android:id="@+id/textPasswordHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At least 8 characters, one number, one special character"
+                android:textSize="12sp"
+                android:textColor="#808080"
+                android:layout_marginBottom="16dp"
+                android:paddingStart="4dp" />
+
+            <!-- Role Selection -->
+            <Spinner
+                android:id="@+id/spinnerRole"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/spinner_bg_theme_aware"
+                android:layout_marginBottom="24dp"
+                android:padding="12dp"
+                android:popupBackground="?attr/colorSurface"
+                android:spinnerMode="dropdown"
+                android:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <!-- Sign Up Button -->
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Sign Up"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:backgroundTint="?attr/colorPrimary"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_marginBottom="12dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

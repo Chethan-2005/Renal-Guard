@@ -14,37 +14,44 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Date -->
         <TextView
             android:id="@+id/tvDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Date: 2025-10-05"
+            android:text="Date: 2025-10-11"
             android:textStyle="bold"
             android:textSize="16sp"
             android:textColor="?attr/colorOnSurface" />
 
-        <!-- Time -->
         <TextView
             android:id="@+id/tvTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Time: 10:00 - 13:00"
+            android:text="Time: 10:00 AM - 01:00 PM"
             android:textSize="14sp"
-            android:textColor="?attr/colorOnSurface"
-            android:layout_marginTop="4dp"/>
+            android:layout_marginTop="4dp"
+            android:textColor="?attr/colorOnSurface" />
 
-        <!-- Remaining Slots -->
+        <!-- Status Label -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Starts in 2h 15m"
+            android:textSize="13sp"
+            android:textStyle="italic"
+            android:layout_marginTop="2dp"
+            android:textColor="@android:color/holo_green_dark" />
+
         <TextView
             android:id="@+id/tvRemaining"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Remaining Slots: 8"
             android:textSize="14sp"
-            android:textColor="?attr/colorOnSurface"
-            android:layout_marginTop="2dp"/>
+            android:layout_marginTop="6dp"
+            android:textColor="?attr/colorOnSurface" />
 
-        <!-- Book Button -->
         <Button
             android:id="@+id/btnBook"
             android:layout_width="wrap_content"
@@ -54,6 +61,5 @@
             android:text="Book"
             android:textAllCaps="false"
             android:textColor="@android:color/white" />
-
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

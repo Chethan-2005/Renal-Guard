@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "774114525825",
+    "project_id": "renalguard-12029",
+    "storage_bucket": "renalguard-12029.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774114525825:android:ff75ec4f445a9f890e8380",
+        "android_client_info": {
+          "package_name": "com.simats.renalguard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAz4XmS67se-UQ9_DOPbCnQnKgOD3CjzMo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
